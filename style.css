@@ -1,0 +1,148 @@
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: hsl(217, 54%, 11%);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .text_color {
+            color: hsl(215, 51%, 70%);
+        }
+        
+        .container {
+            /* margin: 50px 20px 0 20px; */
+            background-color: hsl(216, 50%, 16%);
+            border-radius: 20px;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 25px;
+        }
+        
+        .cover_image {
+            background-image: url('./images/image-equilibrium.jpg');
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .cover_image:hover {
+            background: url('./images/image-equilibrium.jpg') no-repeat center/cover, url('./images/icon-view.svg') no-repeat center hsla(178, 100%, 50%, 0.5);
+            background-blend-mode: overlay;
+            cursor: pointer;
+        }
+        
+        .header_text_container {
+            width: 100%;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+        }
+        
+        .header_text_container h4 {
+            color: hsl(0, 0%, 100%);
+            font-weight: 600;
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+        }
+        
+        .header_text_container h4:hover {
+            cursor: pointer;
+            color: hsl(178, 100%, 50%);
+        }
+        
+        .header_text_container p {
+            line-height: 25px;
+        }
+        
+        .container_small {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .container_small div {
+            display: flex;
+            align-items: center;
+        }
+        
+        .container_small img {
+            padding-right: 10px;
+        }
+        
+        .icon_ethereum {
+            color: hsl(178, 100%, 50%);
+        }
+        
+        .line {
+            width: 100%;
+            border-top: 1px solid hsl(215, 51%, 70%);
+        }
+        
+        .footer {
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-top: 15px;
+        }
+        
+        .footer img {
+            height: 30px;
+            border: solid 1px white;
+            border-radius: 50%;
+        }
+        
+        .footer div {
+            padding-left: 15px;
+        }
+        
+        span {
+            color: hsl(0, 0%, 100%);
+        }
+        
+        span:hover {
+            cursor: pointer;
+            color: hsl(178, 100%, 50%);
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            padding-top: 50px;
+            color: white;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        @media (min-width:1024px) {
+            .container {
+                width: 300px;
+                margin-top: 100px;
+            }
+            .cover_image {
+                width: 260px;
+                height: 260px;
+            }
+        }
